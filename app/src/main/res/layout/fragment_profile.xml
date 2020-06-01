@@ -95,7 +95,7 @@
         android:layout_below="@+id/textViewVerified"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"
-        android:background="@drawable/rounded_button_solid"
+        android:backgroundTint="@color/blackish_blue"
         android:paddingLeft="55dp"
         android:paddingRight="55dp"
         android:text="Save"

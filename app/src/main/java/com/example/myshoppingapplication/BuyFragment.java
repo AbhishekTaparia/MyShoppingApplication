@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -54,14 +55,10 @@ public class BuyFragment extends Fragment {
     private String bEmail;
     private int position;
     private String key;
-    int imagePosition;
-    String stringImageUri;
     FirebaseAuth mAuth;
     DatabaseReference mDatabaseRef;
     private FirebaseStorage mStorage;
     private ValueEventListener mDBListener;
-    DatabaseReference userDatabase;
-    private List<User> mUser;
     private List<Upload> mUploads;
 
     @Override
@@ -124,6 +121,7 @@ public class BuyFragment extends Fragment {
             price.setText("₹ " + pPrice);
             seller.setText(sName);
             sellDate.setText(date);
+            Log.d("desc " , desc);
             if (desc != null) {
                 Desc_tag.setVisibility(View.VISIBLE);
                 Desc_text.setVisibility(View.VISIBLE);

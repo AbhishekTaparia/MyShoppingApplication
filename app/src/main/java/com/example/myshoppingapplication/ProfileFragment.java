@@ -40,14 +40,14 @@ import static android.app.Activity.RESULT_OK;
 
 public class ProfileFragment extends Fragment {
     private static final int CHOOSE_IMAGE = 101;
-    TextView textView, textViewEmail;
-    ImageView imageView;
-    EditText editText;
-    Uri uriProfileImage;
-    ProgressBar progressBar;
-    String profileimageUrl;
-    FirebaseAuth mAuth;
-    //private DatabaseReference mDatabaseRef;
+    private TextView textView, textViewEmail;
+    private ImageView imageView;
+    private EditText editText;
+    private Uri uriProfileImage;
+    private ProgressBar progressBar;
+    private String profileimageUrl;
+    private FirebaseAuth mAuth;
+
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
